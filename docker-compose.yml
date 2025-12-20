@@ -4,10 +4,7 @@ networks:
     driver: bridge
 services:
   db:
-    image: db-mysql:1.0
-    build:
-      context: .
-      dockerfile: Dockerfile.mysql
+    image: mysql:8.0
     container_name: mysql_container
     environment:
       - MYSQL_ROOT_PASSWORD=1234
